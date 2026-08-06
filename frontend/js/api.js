@@ -1,6 +1,6 @@
 // frontend/js/api.js
 
-const BASE_URL = "http://localhost:8000"; // FastAPI 서버 주소
+const BASE_URL = "https://ucspxqkziznucihjmobd.supabase.co"; // FastAPI 서버 주소
 
 // 수행평가 등록 (POST)
 // assData: { title, subject, grade, class_num, date, description }
