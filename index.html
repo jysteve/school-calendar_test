@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- frontend/index.html -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -140,3 +141,147 @@
   <script type="module" src="./frontend/js/calendar.js"></script>
 </body>
 </html>
+=======
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>수행평가 캘린더</title>
+  <link rel="stylesheet" href="./frontend/css/style.css">
+</head>
+<body>
+  <h1>수행평가 등록/조회</h1>
+  <div id="form-container">
+    <h2>수행평가 등록</h2>
+    <form id="assForm">
+      <label>학년: 
+        <select id="grade">
+          <option value="1">1학년</option>
+          <option value="2">2학년</option>
+          <option value="3">3학년</option>
+        </select>
+      </label>
+      <label>반: 
+        <select id="class">
+          <option>1반</option>
+          <option>2반</option>
+          <option>3반</option>
+          <option>4반</option>
+          <option>5반</option>
+          <option>6반</option>
+          <option>7반</option>
+          <option>8반</option>
+          <option>9반</option>
+          <option>10반</option>
+          <option>11반</option>
+          <option>12반</option>
+          <option>13반</option>
+        </select>
+      </label><br>
+      <label>과목: 
+        <select id="subject">
+          <option>국어</option>
+          <option>수학</option>
+          <option>영어</option>
+          <option>사회</option>
+          <option>과학</option>
+          <option>한국사</option>
+          <option>정보</option>
+          <option>체육</option>
+          <option>음악</option>
+          <option>미술</option>
+        </select>
+      </label><br>
+      <label>제목: <input type="text" id="title"></label><br>
+      <label>날짜: <input type="date" id="date"></label><br>
+      <label>설명: <textarea id="description"></textarea></label><br>
+      <button type="submit">등록</button>
+    </form>
+  </div>
+  <hr>
+  <div id="calendar-container">
+
+    <div class="top-bar">
+        <div class="filter-card">
+
+          <h2>📅 수행평가 조회</h2>
+
+          <div class="filter-row">
+
+            <div class="select-group">
+              <label>학년</label>
+
+              <select id="filterGrade">
+
+                <option value="1">1학년</option>
+                <option value="2">2학년</option>
+                <option value="3">3학년</option>
+
+              </select>
+        </div>
+
+        <div class="select-group">
+            <label>반</label>
+
+            <select id="filterClass">
+
+                <option value="1">1반</option>
+                <option value="2">2반</option>
+                <option value="3">3반</option>
+                <option value="4">4반</option>
+                <option value="5">5반</option>
+                <option value="6">6반</option>
+                <option value="7">7반</option>
+                <option value="8">8반</option>
+
+            </select>
+        </div>
+
+       </div>
+
+      </div>
+
+    </div>
+
+    <div class="calendar-header">
+
+      <button id="prevMonth" class="month-btn">
+          ◀
+      </button>
+
+      <h2 id="monthTitle"></h2>
+
+      <button id="todayBtn">
+          오늘
+      </button>
+
+      <button id="nextMonth" class="month-btn">
+          ▶
+      </button>
+
+    </div>
+
+    <div class="calendar">
+
+        <div class="week">
+            <div>일</div>
+            <div>월</div>
+            <div>화</div>
+            <div>수</div>
+            <div>목</div>
+            <div>금</div>
+            <div>토</div>
+        </div>
+
+        <div class="days" id="days">
+
+        </div>
+
+    </div>
+
+</div>
+  <script type="module" src="./frontend/js/calendar.js"></script>
+</body>
+</html>
+>>>>>>> 0fa52f1 (a)
